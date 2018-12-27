@@ -1,0 +1,81 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title><!--down of a brave new world-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="icon.png">
+	<link href="https://amarius1.github.io/NeoMaterial/css/neo-material.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://amarius1.github.io/NeoMaterial/css/sidebarjs.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<style>
+	::-webkit-scrollbar {
+			 display: flex;
+			width: 7px;
+			background:rgba(0,0,0,0)
+		}
+		/* Track */
+		::-webkit-scrollbar-track {
+			opacity: 0;
+		}
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #bdbdbd;
+		}
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #757575;
+		}
+		.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+</style>
+<body bgcolor="white">
+
+<div style="background-color: white;" class="wrapper-container center-element">
+  <a href="index.html"><i class="menus cbtn-flat material-icons darker-text" ripple>arrow_back</i></a>
+
+  <H1 style="margin-top: 60px;" class="darker-text center">Calculator PWA</H1>
+
+
+  <H3 class="dark-text center">Created by Alexander</H3>
+</div>
+<!--scripts-->
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCHI3_4OTndmqVtWMd1qIstl2aCS7nVIiM",
+    authDomain: "calculator-67cd3.firebaseapp.com",
+    databaseURL: "https://calculator-67cd3.firebaseio.com",
+    projectId: "calculator-67cd3",
+    storageBucket: "",
+    messagingSenderId: "280942983081"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/neo-material.js"></script>
+<script src="https://amarius1.github.io/NeoMaterial/js/bigSlide.js"></script>
+<script src="logic.js"></script>
+
+<script>
+ // Init SidebarJS
+ var sidenav = new sidenav.SidebarElement();
+ </script>
+ <script>
+    $(document).ready(function() {
+        $('.side-btn-action').bigSlide();
+    });
+</script>
+</body>
+
+</html>

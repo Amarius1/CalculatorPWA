@@ -1,0 +1,191 @@
+.gradient
+{
+background-image: linear-gradient(to bottom, #ffffff, #f6f6f9, #eeedf3, #e5e5ed, #dcdce7);
+}
+body
+{
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.wrapper-container
+{
+  background-color: #eeeeee;
+  width: 55%;
+  height: 100%;
+  display: inline-block;
+}
+.menus
+{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+
+.display
+{
+  background-color: white;
+  width: 100%;
+  height: 32%;
+  word-wrap: break-word;
+  font-size: 80px;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  overflow:auto;
+  text-align: justify;
+  text-align-last: right;
+  padding-top: 40px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+}
+.btn.num {
+  padding: 22px 36px;
+  border-radius: 50px;
+  font-size: 31px;
+  width: 15px;
+  color: #212121;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  box-shadow: -1px 4px 6px rgba(0,0,0,0), 1px 1px 3px rgba(0,0,0,0);
+}
+@font-face {
+font-family: "Product Sans";
+src: url("Product Sans Regular.ttf");
+}
+
+.buttons
+{
+  width: 80%;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 0px;
+}
+.secondary
+{
+  width: 20%;
+  position: absolute;
+  top: 41%;
+  right: 0px;
+}
+.circle
+{
+  border-radius: 50px;
+  padding: 21px 21px;
+}
+.circle2
+{
+  border-radius: 50px;
+  padding: 21px 21px;
+  transition: all 0.2s !important;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-container
+  {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100%;
+  }
+}
+.btn
+{
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    transition: all 1s;
+}
+.num2
+{
+  width: 30px;
+  padding: 6px 11px;
+  font-size: 28px;
+}
+a.num:active
+{
+  background-color: #bdbdbd !important;
+  transition: all 0.5s;
+}
+a.num2:active
+{
+  background-color: white !important;
+  color: #4285F4;
+  transition: all 0.1s;
+}
+.btn.num4 {
+  padding: 22px 36px;
+  border-radius: 50px;
+  font-size: 31px;
+  width: 15px;
+  color: #212121;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  box-shadow: -1px 4px 6px rgba(0,0,0,0), 1px 1px 3px rgba(0,0,0,0);
+}
+.num4:active
+{
+  background-color: rgba(0,0,240,0.15) !important;
+  transition: all 0.2s;
+}
+a.num3:active
+{
+  background-color: white !important;
+  color: #4285F4;
+  transition: all 0.1s;
+}
+a.circle:active
+{
+  background-color: white !important;
+  color: #4285F4;
+  transition: all 0.1s;
+}
+a.circle2:active
+{
+  background-color: white !important;
+  color: red;
+  transition: all 0.1s;
+}
+.num3
+{
+  width: 30px;
+  padding: 14px 11px;
+  font-size: 28px;
+}
+.ripple {
+  display: block;
+  position: absolute;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  transition: opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+.ripple.is-active {
+  -webkit-transform: translate(-50%, -50%) scale(3);
+          transform: translate(-50%, -50%) scale(3);
+}
+.ripple.is-dying {
+  opacity: 0;
+}
